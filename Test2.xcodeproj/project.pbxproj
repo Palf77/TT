@@ -21,6 +21,11 @@
 		D9B4BBB818EEAD3300E76006 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B4BB9A18EEAD3300E76006 /* UIKit.framework */; };
 		D9B4BBC018EEAD3300E76006 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9B4BBBE18EEAD3300E76006 /* InfoPlist.strings */; };
 		D9B4BBC218EEAD3300E76006 /* Test2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B4BBC118EEAD3300E76006 /* Test2Tests.m */; };
+		D9FECA6818F7CB2000AE81E4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FECA6418F7CB2000AE81E4 /* background.png */; };
+		D9FECA6918F7CB2000AE81E4 /* balle.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FECA6518F7CB2000AE81E4 /* balle.png */; };
+		D9FECA6A18F7CB2000AE81E4 /* brique.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FECA6618F7CB2000AE81E4 /* brique.png */; };
+		D9FECA6B18F7CB2000AE81E4 /* raquette.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FECA6718F7CB2000AE81E4 /* raquette.png */; };
+		D9FECA7418F7EA6800AE81E4 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FECA7318F7EA6800AE81E4 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		D9B4BBBD18EEAD3300E76006 /* Test2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test2Tests-Info.plist"; sourceTree = "<group>"; };
 		D9B4BBBF18EEAD3300E76006 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D9B4BBC118EEAD3300E76006 /* Test2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2Tests.m; sourceTree = "<group>"; };
+		D9FECA6418F7CB2000AE81E4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../Downloads/images/background.png; sourceTree = "<group>"; };
+		D9FECA6518F7CB2000AE81E4 /* balle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = balle.png; path = ../../Downloads/images/balle.png; sourceTree = "<group>"; };
+		D9FECA6618F7CB2000AE81E4 /* brique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brique.png; path = ../../Downloads/images/brique.png; sourceTree = "<group>"; };
+		D9FECA6718F7CB2000AE81E4 /* raquette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raquette.png; path = ../../Downloads/images/raquette.png; sourceTree = "<group>"; };
+		D9FECA7218F7EA6800AE81E4 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		D9FECA7318F7EA6800AE81E4 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 		D9B4BB8A18EEAD3300E76006 = {
 			isa = PBXGroup;
 			children = (
+				D9FECA6318F7CAE800AE81E4 /* Resources */,
 				D9B4BB9C18EEAD3300E76006 /* Test2 */,
 				D9B4BBBB18EEAD3300E76006 /* Test2Tests */,
 				D9B4BB9518EEAD3300E76006 /* Frameworks */,
@@ -119,6 +131,8 @@
 				D9B4BBAC18EEAD3300E76006 /* ViewController.m */,
 				D9B4BBAE18EEAD3300E76006 /* Images.xcassets */,
 				D9B4BB9D18EEAD3300E76006 /* Supporting Files */,
+				D9FECA7218F7EA6800AE81E4 /* ViewController2.h */,
+				D9FECA7318F7EA6800AE81E4 /* ViewController2.m */,
 			);
 			path = Test2;
 			sourceTree = "<group>";
@@ -150,6 +164,17 @@
 				D9B4BBBE18EEAD3300E76006 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9FECA6318F7CAE800AE81E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9FECA6418F7CB2000AE81E4 /* background.png */,
+				D9FECA6518F7CB2000AE81E4 /* balle.png */,
+				D9FECA6618F7CB2000AE81E4 /* brique.png */,
+				D9FECA6718F7CB2000AE81E4 /* raquette.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +224,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = tof;
 				TargetAttributes = {
+					D9B4BB9218EEAD3300E76006 = {
+						DevelopmentTeam = T85593JQY6;
+					};
 					D9B4BBB318EEAD3300E76006 = {
 						TestTargetID = D9B4BB9218EEAD3300E76006;
 					};
@@ -229,6 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B4BBAF18EEAD3300E76006 /* Images.xcassets in Resources */,
+				D9FECA6818F7CB2000AE81E4 /* background.png in Resources */,
+				D9FECA6B18F7CB2000AE81E4 /* raquette.png in Resources */,
+				D9FECA6918F7CB2000AE81E4 /* balle.png in Resources */,
+				D9FECA6A18F7CB2000AE81E4 /* brique.png in Resources */,
 				D9B4BBA118EEAD3300E76006 /* InfoPlist.strings in Resources */,
 				D9B4BBAA18EEAD3300E76006 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B4BBAD18EEAD3300E76006 /* ViewController.m in Sources */,
+				D9FECA7418F7EA6800AE81E4 /* ViewController2.m in Sources */,
 				D9B4BBA718EEAD3300E76006 /* AppDelegate.m in Sources */,
 				D9B4BBA318EEAD3300E76006 /* main.m in Sources */,
 			);
@@ -376,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
 				INFOPLIST_FILE = "Test2/Test2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +425,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test2/Test2-Prefix.pch";
 				INFOPLIST_FILE = "Test2/Test2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +495,7 @@
 				D9B4BBC718EEAD3300E76006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9B4BBC818EEAD3300E76006 /* Build configuration list for PBXNativeTarget "Test2Tests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +504,7 @@
 				D9B4BBCA18EEAD3300E76006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
