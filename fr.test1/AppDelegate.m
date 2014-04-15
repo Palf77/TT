@@ -20,6 +20,7 @@
     return YES;
 }
 
+//toto
 //- (void)dealloc // 6
 //{
 //    [_window release]; // 7
