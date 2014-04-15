@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate> { // 2
+    
+    IBOutlet UILabel *helloLabel; // 3
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIWindow *window; // 4
+
 
 @end

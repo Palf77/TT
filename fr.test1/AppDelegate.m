@@ -10,14 +10,31 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+@synthesize window=_window; // 2
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions // 3
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [helloLabel setText:@"Hello World"]; // 4
+    // équivalent : helloLabel.text = @"Hello iPuP";
+    [self.window makeKeyAndVisible]; // 4
     return YES;
 }
+
+//- (void)dealloc // 6
+//{
+//    [_window release]; // 7
+//    [super dealloc]; // 8
+//}
+
+
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+//    return YES;
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
